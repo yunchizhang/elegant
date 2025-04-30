@@ -106,12 +106,12 @@
                 </div>
         </header>
 
-        {% if page.sidenav_pages %}
+        {% if page.linked_pages %}
         <div class="sidenav-main">
             <nav id="sidebar">
                 <h2><a href="{{ SITEURL }}/{{ page.url }}"> {{ page.title }} {% if page.subtitle %}<br> <small> {{ page.subtitle }}
                         </small> {% endif %} </a></h2>
-                {% for p in page.sidenav_pages %}
+                {% for p in page.linked_pages %}
                 <div class="nav-link" data-file="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</div>
                     {% if p.top_toc %}
                     <div class="submenu">
