@@ -1,0 +1,9 @@
+.page-header {
+    border-bottom: 2px solid dimgray;
+    color: dimgray;
+    margin: 10px 0 30px 0;
+}
+
+footer {
+    max-height: 100px;
+}
