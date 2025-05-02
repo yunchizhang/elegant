@@ -7,3 +7,13 @@
 footer {
     max-height: 100px;
 }
+
+.highlight span.hll span {
+    background-color: #ffffcc;
+    display: inline-block;
+    width: auto; /* 100% is not working in some cases */
+}
+
+td.linenos .codecopy-btn {
+    display: none !important; /* Hide the button in the line numbers column */
+}

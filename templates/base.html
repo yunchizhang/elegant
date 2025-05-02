@@ -108,6 +108,16 @@
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
         <script src="{{ SITEURL }}/theme/js/elegant.prod.9e9d5ce754.js"></script>
         <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                    tags: 'ams'  // Enables equation numbering and \label/\ref support
+                }
+            };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+        <script>
             function validateForm(query)
             {
                 return (query.length > 0);
